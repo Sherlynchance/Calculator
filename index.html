@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator-body">
+       
+        <div class="calculator-input">
+            <h4>Input 1</h4>
+            <input type="text" class="input-box" id="n1" value="">
+            <input type="checkbox" class="larger" id="check1" name="input1" value="input1">
+
+            <h4>Input 2</h4>
+            <input type="text" class="input-box" id="n2" value="">
+            <input type="checkbox" class="larger" id="check2" name="input2" value="input2">
+
+            <h4>Input 3</h4>
+            <input type="text" class="input-box" id="n3" value="">
+            <input type="checkbox" class="larger" id="check3" name="input3" value="input3">
+        </div>
+
+        <div id="calculator-operation">
+            <button class="general button" value="+" onclick=addition()>&#43</button>
+            <button class="general button" value="-"onclick=subs()>&#8722</button>
+            <button class="multiplication button" value="X" onclick=multiply()>&times</button>
+            <button class="general button" value="/" onclick=division()>&divide</button>
+            <button class="clear button" value="clear" onclick=clear_all()>C</button>
+        </div>
+
+        <input type="text" id="calculator-screen" value="" disabled/> 
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
